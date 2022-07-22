@@ -10,12 +10,6 @@ tools {
 }
 
     stages {
-      stage('clean up') {
-            steps {
-                echo 'Hello build dir'
-                deleteDir()
-            }
-        }
         stage('clone repo') {
             steps {
                 echo 'Clone repo'
